@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    android:layout_width="match_parent" 设置view等的宽度，match_parent：铺满父级容器，
+                                                        wrap_content：适应
+    android:orientation="vertical" 设置LinearLayout为垂直排列
+    android:layout_gravity="center_vertical" 设置view的位置
+                                             如果设置的是viewGroups，则其中的所有view都遵守
+                                             如果只是单个view，单独起作用
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/roll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#E91E63"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Roll"/>
+
+    <Button
+        android:id="@+id/countUp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Count_up"/>
+</LinearLayout>

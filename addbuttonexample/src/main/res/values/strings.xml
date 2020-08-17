@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">addButtonExample</string>
+    <string name="Roll">Roll</string>
+    <string name="Count_up">Count up</string>
+</resources>
